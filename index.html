@@ -148,7 +148,7 @@
     <div class="post-header index">
         <h1 class="title">
             <a href="/Saki/2018/03/07/first/">
-                Untitled
+                搭建这个blog
             </a>
         </h1>
         <div class="post-info">
@@ -162,45 +162,24 @@
 
     
         <div class="content">
-            <hr>
-<h2 id="title-First-Night"><a href="#title-First-Night" class="headerlink" title=" title: First Night"></a> title: First Night</h2><blockquote>
-<p>我有一头<strong>小毛驴</strong>，可是我从来都不骑。</p>
+            <blockquote>
+<p>参考了网上很多博客，经过自己实验，搞成这一篇。<br>环境：win7 64bit<br>工具：Git,Nodejs,Hexo</p>
 </blockquote>
-
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/Saki/2018/03/07/hello-world/">
-                Hello World
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2018-03-07</span>
-            
-            
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>官网下载安装</p>
+<h3 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h3><p>官网下载安装。npm已经含在里面了，不需要另外下载。</p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h3 id="创建blog"><a href="#创建blog" class="headerlink" title="创建blog"></a>创建blog</h3><p>在f:\Saki下进入bash，创建一个放网站相关文件的文件夹<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init pxy7896.github.io</span><br></pre></td></tr></table></figure></p>
+<p>设置主题。在这里<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a> 可以挑选主题<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> githubAddress</span><br></pre></td></tr></table></figure></p>
+<p>我挑的是alpha-dust，记得把下载的文件夹直接放在themes下。然后修改pxy7896.github.io下的_config.yml<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">title: Saki //你博客的名字</span><br><span class="line">author: pxy7896 //你的名字</span><br><span class="line">language: zh-Hans //语言 中文</span><br><span class="line">theme: alpha-dust //刚刚安装的主题名称</span><br><span class="line">url: https://pxy7896.github.io //这个是github分配的网址，访问时用这个就好</span><br><span class="line">root: /Saki</span><br><span class="line">deploy:</span><br><span class="line"><span class="built_in">type</span>: git //使用Git 发布</span><br><span class="line">repo: http://github.com/pxy7896/Saki.git //提前在github里面创建了一个叫Saki的repository</span><br></pre></td></tr></table></figure></p>
+<p>然后在pxy7896.github.io/source/_posts下创建标题名.md的文件，写blog。</p>
+<p>开启服务器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
+<p>然后进入<a href="http://localhost:4000访问，即可看到文章。" target="_blank" rel="noopener">http://localhost:4000访问，即可看到文章。</a></p>
+<h3 id="安装自动发布到git上的工具"><a href="#安装自动发布到git上的工具" class="headerlink" title="安装自动发布到git上的工具"></a>安装自动发布到git上的工具</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<h3 id="自动发布静态网页到github-page上"><a href="#自动发布静态网页到github-page上" class="headerlink" title="自动发布静态网页到github page上"></a>自动发布静态网页到github page上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>第一次发布时需要输入github用户名和密码。<br>执行hexo d可能有error: deployer not found: git，那么再安装一次发布工具</p>
+</blockquote>
+<p>最后访问 <a href="https://pxy7896.github.io/Saki/">https://pxy7896.github.io/Saki/</a></p>
 
         </div>
     
@@ -236,11 +215,7 @@
         <ul>
             
             <li>
-                <a class="footer-post" href="/Saki/2018/03/07/first/">Untitled</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/Saki/2018/03/07/hello-world/">Hello World</a>
+                <a class="footer-post" href="/Saki/2018/03/07/first/">搭建这个blog</a>
             </li>
             
         </ul>
